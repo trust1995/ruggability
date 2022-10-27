@@ -27,6 +27,17 @@ Any contribution to the Ruggability database is more than welcome. Please open a
 
 # The Ruggability Database
 
+## OpenSea - Leading NFT marketplace
+
+|     |     |
+| --- | --- |
+| Anonymous | No  |
+| Contract upgradeability | No  |
+| Asset risk | No  |
+| Multisig | N/A |
+| Timelock | N/A |
+| Additional | Owner can pause marketplace |
+
 ## Holograph - Globally unique NFT platform
 
 |     |     |
@@ -48,17 +59,6 @@ Any contribution to the Ruggability database is more than welcome. Please open a
 | Multisig | On chain governance |
 | Timelock | -   |
 | Additional |     |
-
-## OpenSea - Leading NFT marketplace
-
-|     |     |
-| --- | --- |
-| Anonymous | No  |
-| Contract upgradeability | No  |
-| Asset risk | No  |
-| Multisig | N/A |
-| Timelock | N/A |
-| Additional | Owner can pause marketplace |
 
 ## Iron Bank - Lending platform
 
