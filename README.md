@@ -49,7 +49,7 @@ Any contribution to the Ruggability database is more than welcome. Please open a
 | Timelock | No  |
 | Additional |     |
 
-## The Graph ETH <-> Arbitrum GRPH token bridge
+## The Graph ETH <-> Arbitrum GRT token bridge
 
 |     |     |
 | --- | --- |
