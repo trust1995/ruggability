@@ -1,87 +1,52 @@
 ---
 permalink: /
 ---
+# **Documentation**
+> How this project works and how to maintain your own
 
-# Ruggability - know the risks before it's too late
+<div align="center">
+    <a href="https://github.com/MichaelCurrin/gh-pages-no-jekyll/generate">
+        <img src="https://img.shields.io/badge/Use_this_template-Generate-2ea44f?style=for-the-badge" alt="Use this template">
+    </a>
+</div>
 
-## Motivation
 
-The combined factors of anonymity, 6+ figures of cash and transaction finality provide unprecedented incentives for scammers of all sorts to run away with your money. There's therefore no surprise that every week we [witness](https://web3isgoinggreat.com/?theme=rugPull) new massive rug pulls.
+## About
 
-This website is an attempt to uncover the different centralization and permission threats that exist in different Web3 projects. Armed with knowledge, investors and speculators can choose where to pour their funds fully understanding the risks involved.
+This project is built around using markdown content to make a website. 
 
-## Format
+This is great for non-developers to work on. No experience with Ruby, Jekyll, Liquid, HTML or CSS required. Those are all used internally, but you don't need to worry about that.
 
-Each project will be described using several metrics:
+This repo is super light. No config needed. You don't need to setup a theme or a layout. GitHub will figure that out and will apply its standard theme to your GitHub Pages site. So will it will have a clean, white, mobile-friendly site with a heading. The limitations are covered more on these pages, such as lack of a navbar. But you can still setup links to pages, as with the Menu below.
 
-1.  Anonymity - are key project members anonymous?
-2.  Contract upgradeability - How easily can the project "change the rules" by upgrading proxy contracts
-3.  Asset risk - are special addresses permitted to handle user's assets?
-4.  Multisig - Is the owner address a multisig smart wallet? Only applicable to dangerous operations
-5.  Timelock - Is there a lock time period before any dangerous protocol operation?
-6.  Additional - Threats not handled by the above metrics go here. For example, for stablecoins, is the backing strategy adequate? What are possible pitfalls?
+The page you are currently viewing is `README.md` in the docs directory, with path set as `/` in the frontmatter. Alternatively, you can add `index.md` or `index.html` as your homepage. I just like how a README.md previews well in GitHub.
 
-## Disclaimer
 
-Users are 100% responsible for any use of the information contained on this website. We do not guarantee any of the provided information is correct, up-to-date, or reliable. DYOR.
+## How to use this project
 
-## Contribution
+- Template for a new project or docs site. Or use as a reference for existing projects.
+- Read the tutorial content under template notes.
+- View this live demo site.
 
-Any contribution to the Ruggability database is more than welcome. Please open an ISSUE or a PULL REQUEST and we'll make sure to include it and add your name to the contributors list.
 
-# The Ruggability Database
+## Menu
 
-## Holograph - Globally unique NFT platform
+Some info on how to make a site like this and how it works.
 
-|     |     |
-| --- | --- |
-| Anonymous | Yes |
-| Contract upgradeability | Yes. Can attach new addresses to the [Holograph](https://github.com/holographxyz/holograph-protocol/blob/c4_audit/contracts/Holograph.sol) entry point |
-| Asset risk | Owner can [forge](https://github.com/holographxyz/holograph-protocol/blob/b39a61ca53f97fcae8a39f92c2285d6b57a16de0/contracts/module/LayerZeroModule.sol#L190) any bridging in message from another chain, by changing the registered Layer Zero approved sender. |
-| Multisig | No  |
-| Timelock | No  |
-| Additional |     |
+- [About](about.md)
+- [Features](features.md)
+- [Limitations](limitations.md)
+- [What about a Wiki?](wiki.md)
 
-## The Graph ETH <-> Arbitrum GRPH token bridge
 
-|     |     |
-| --- | --- |
-| Anonymous | No  |
-| Contract upgradeability | Yes. Can attach new addresses to the [Holograph](https://github.com/holographxyz/holograph-protocol/blob/c4_audit/contracts/Holograph.sol) entry point |
-| Asset risk | Governor can [approve](https://github.com/graphprotocol/contracts/blob/7b383140ba5430a564d3caecb1074b31f5497bab/contracts/gateway/BridgeEscrow.sol#L28) bridge tokens held in escrow to any address. |
-| Multisig | On chain governance |
-| Timelock | -   |
-| Additional |     |
+## Source
 
-## OpenSea - Leading NFT marketplace
+View source on GitHub:
 
-|     |     |
-| --- | --- |
-| Anonymous | No  |
-| Contract upgradeability | No  |
-| Asset risk | No  |
-| Multisig | N/A |
-| Timelock | N/A |
-| Additional | Owner can pause marketplace |
+[![MichaelCurrin - gh-pages-no-jekyll](https://img.shields.io/static/v1?label=MichaelCurrin&message=gh-pages-no-jekyll&color=blue&logo=github)](https://github.com/MichaelCurrin/gh-pages-no-jekyll)
 
-## Iron Bank - Lending platform
 
-|     |     |
-| --- | --- |
-| Anonymous | Yes |
-| Contract upgradeability | Unitroller (key logic contract) and vaults can be [upgraded](https://docs.ib.xyz/#protocol-contract) |
-| Asset risk | Vaults can be [upgraded](https://etherscan.io/address/0x41c84c0e2ee0b740cf0d31f63f3b6f627dc6b393#readContract) with multisig, no timelock |
-| Multisig | [Yes](https://docs.ib.xyz/governance) |
-| Timelock | 2 Days. No timelock for emptying [reserve](https://docs.ib.xyz/governance) |
-| Additional |     |
+## Documentation template
 
-## Fringe Finance - Lending platform
+If you're looking for template docs which you can easily edit and reuse for your own site, rather see my [Generic Project Template](https://michaelcurrin.github.io/generic-project-template/) project's docs. It uses the same docs site approach as this one.
 
-|     |     |
-| --- | --- |
-| Anonymous | Yes |
-| Contract upgradeability | Yes |
-| Asset risk | Yes |
-| Multisig | No  |
-| Timelock | 7 days for [upgrades](https://etherscan.io/address/0xfb872a364e63950f9847a39202bb4d1c07534466#readContract) by ProxyAdmin |
-| Additional | Normal admin can add new project token, fake high value using rogue oracle, use it as collateral to steal entire [vault](https://etherscan.io/address/0x9fD0928A09E8661945767E75576C912023bA384D?utm_source=immunefi#readProxyContract#F5). |
