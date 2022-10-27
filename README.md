@@ -23,7 +23,7 @@ Users are 100% responsible for any use of the information contained on this webs
 
 ## Contribution
 
-Any contribution to the Ruggability database is more than welcome. Please open an ISSUE or a PULL REQUEST and we'll make sure to include it and add your name to the contributors list.
+Any contribution to the Ruggability database is more than welcome. Please open an ISSUE or a PULL REQUEST [here](https://github.com/trust1995/ruggability) and we'll make sure to include it and add your name to the contributors list.
 
 # The Ruggability Database
 
