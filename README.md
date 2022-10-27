@@ -1,3 +1,7 @@
+---
+permalink: /
+---
+
 # Ruggability - know the risks before it's too late
 
 ## Motivation
